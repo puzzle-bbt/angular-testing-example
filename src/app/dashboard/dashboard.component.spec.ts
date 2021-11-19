@@ -40,11 +40,12 @@ describe('DashboardComponent', () => {
     expect(fixture.nativeElement.querySelector('h2').textContent).toEqual('Top Heroes');
   });
 
-  it('should call heroService', waitForAsync(() => {
-       expect(getHeroesSpy.calls.any()).toBe(true);
-     }));
-
   it('should display 4 links', waitForAsync(() => {
        expect(fixture.nativeElement.querySelectorAll('a').length).toEqual(4);
      }));
+
+  it('should call heroService', waitForAsync(() => {
+    expect(getHeroesSpy.calls.any()).toBe(true);
+  }));
+
 });
