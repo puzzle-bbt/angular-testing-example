@@ -30,7 +30,6 @@ describe('change a hero', () => {
     cy.get('.heroes-menu > a').first().should('contain', 'Narco');
   });
 
-
   it('search hero and click on it', () => {
     cy.visit('/');
 
@@ -47,7 +46,6 @@ describe('change a hero', () => {
     cy.wait(400);
     cy.get(".search-result > li").first().should("contain", "Bombasto 2");
   });
-
 
   it('remove messages', () => {
     cy.visit('/');
@@ -67,7 +65,6 @@ describe('change a hero', () => {
 
 
   });
-
 
   it('remove hero', () => {
     cy.visit('/');
