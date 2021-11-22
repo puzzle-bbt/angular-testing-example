@@ -21,6 +21,7 @@ describe('change a hero', () => {
   it('click top hero, change, go back', () => {
     cy.visit('/');
 
+
     // this is a custom command from commands.ts
     cy.clickTopHero('Narco');
 
